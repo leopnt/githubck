@@ -6,6 +6,8 @@ Script I use to backup my github repos
 this is useful if someone stole your computer. So that your github token is not written
 in a plain text file.
 
+0) make a github token in `settings > developer settings > personal access token` and give full repo access
+
 1) write token into file
 ```
 echo "<ghub_token_here>" > ghub_token.txt
