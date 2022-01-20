@@ -3,8 +3,8 @@
 Script I use to backup my github repos
 
 ## Encrypt token with password
-this is useful if someone stole your computer. So that your github token is not written
-in a plain text file.
+this is useful if someone get access to your machine. So that your github token is not written
+in plain text file.
 
 0) make a github token in `settings > developer settings > personal access token` and give full repo access
 
@@ -14,7 +14,10 @@ echo "<ghub_token_here>" > ghub_token.txt
 ```
 **Make sure to remove the last line that contains the token from `~/.bash_history`**
 
+or disable your shell's history while doing the previous task
+
 2) encrypt token
+
 It will ask for a password. Remember this password for the github script
 ```
 gpg -o ghub_token.gpg --symmetric --no-symkey-cache ghub_token.txt
