@@ -3,7 +3,7 @@
 Script I use to backup my github repos
 
 ## Encrypt token with password
-this is useful if someone get access to your machine. So that your github token is not written
+this is useful if someone get access to your computer. So that your github token is not written
 in plain text file.
 
 0) make a github token in `settings > developer settings > personal access token` and give full repo access
