@@ -52,7 +52,7 @@ fi
 
 # fetch user repos ssh_urls where owner is GHUB_UNAME
 SSH_URLS=`curl --silent -u $GHUB_UNAME:$GHUB_TOKEN \
-"https://api.github.com/user/repos" | grep -oe \
+"https://api.github.com/user/repos?per_page=100" | grep -oe \
 "git@github\.com:$GHUB_UNAME/.*\.git"`
 
 # if there is no result, username may be wrong
